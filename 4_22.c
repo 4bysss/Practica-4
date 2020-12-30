@@ -4,7 +4,8 @@
 void reverse(char *str);
 int main(){
 	char str [MAX];
-	gets(str);
+	fgets(str,100,stdin);
+	str[strlen(str)-1]='\0';
 	reverse(str);
 	return 0;}
 //void reverse(char *str)
